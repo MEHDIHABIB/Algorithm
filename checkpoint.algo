@@ -1,0 +1,26 @@
+ALGORITHM checkpoint
+
+VAR
+c : char :="" ;
+nbchar , nbword , nbvow : INTEGER ;
+
+BEGIN
+nbchar := 0 ;
+nbword := 0 ;
+nbvow := 0 ;
+
+WHILE (c <> ".") DO 
+Read (c) ;
+nbword := 1 ;
+nbchar := 1 ;
+
+IF (c = "a" OR c = "e" OR c = "u" OR c = "y")
+nbvow +=1
+ELSE_IF (c =" ")
+nbword += 1 ;
+
+END_IF 
+END_WHILE 
+Write (" The length of the sentence is " , nbchar);
+Write (" The length of the word is " , nbword);
+Write (" The length of the vowls is " , nbvow);
